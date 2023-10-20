@@ -1,0 +1,59 @@
+
+
+<!-- <body >
+
+    <div class="text-center mt-3 p-4">
+        <h1 style="color: white;">SEARCH <SPan style="color: black;">FILM NAME</SPan> </h1>
+        <form [formGroup]="search" class="bg- border p-3" action="">
+            <div class="  p-5 container text-center  " style="box-shadow:  10px 10px 5px 12px lightblue;">
+                <input formControlName="movie" type="text" class="form-control" name="a" id="foreCast" placeholder="Enter The Film Name"><br><br>
+                    <div *ngIf="check" class="">
+
+                        <h1>Title:{{moviedata.Title}}</h1>
+                        <h1>Year:{{moviedata.Year}}</h1>
+                        <h1>Plot:{{moviedata.Plot}}</h1>
+                        <h1>Director:{{moviedata.Director}}</h1>
+                        <img style="height: 450px;" src="{{moviedata.Poster}}" alt="">
+
+                        
+                        
+                            </div>
+                        
+
+
+
+
+            </div>
+        </form>
+    </div>
+
+</body>
+ -->
+
+
+  
+
+    <div class="text-center mt-3 p-4">
+        <h1 style="color: white;">SEARCH <SPan style="color: black;">FILM NAME</SPan> </h1>
+        <form [formGroup]="search" class="bg- border p-3" action="">
+            <div class="  p-5 container text-center  " style="box-shadow:  10px 10px 5px 12px lightblue;">
+                <input formControlName="movie" type="text" class="form-control" name="a" id="foreCast" placeholder="Enter The Film Name"><br><br>
+                <button (click)="movie()" type="button" class="btn btn-success" style="color: whitesmoke;" >SEARCH</button><br><br>
+                <div *ngIf="check" id="result"
+                    style=" height: max-content; font-family: Verdana, Geneva, Tahoma, sans-serif; font-style: oblique;">
+                    <h1>Title:{{moviedata.Title}}</h1>
+                    <h1>Year:{{moviedata.Year}}</h1>
+                    <h1>Director:{{moviedata.Director}}</h1>
+                    <h1>Plot:{{moviedata.Plot}}</h1>
+
+                    <img  src="{{moviedata.Poster}}" alt="">
+
+                </div>
+
+
+
+            </div>
+    <!-- </div> -->
+</form>
+
+
